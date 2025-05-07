@@ -11,7 +11,7 @@ Open webbrower
 
 Input data for login to search Page
     Input Text                 ${locator_emaillogin}      user.test@krupbeam.com
-    Input Text                 ${locator_passwordlogin}   123456789
+    Input Text                 ${locator_passwordlogin}   jKNsrapwLNV7eBN
     Click Element              ${locator_btnlogin}
     Wait Until Page Contains   Search Filters             5s
 

@@ -1,7 +1,7 @@
 *** Settings ***
 Library            SeleniumLibrary
-Resource           ${CURDIR}/variablehw3.robot
-Resource           ${CURDIR}/keywordhw3.robot
+Resource           ${CURDIR}/VariableSearchPage.robot
+Resource           ${CURDIR}/KeywordSearchPage.robot
 Suite Setup        Set Selenium Speed    5s
 Suite Teardown     Close All Browsers
 Test Setup         Open webbrower
@@ -45,9 +45,9 @@ TC004 - Add User - Pass
 TC005 - Add User - fail
     [Documentation]    ใช้สำหรับทดสอบในกรณีกรอกข้อมูลไม่ครบถ้วน 
     [Template]    Input data add user Fail - test template
-    [Tags]    done
+    [Tags]    done12
     [Setup]
-    ${EMPTY}   chuduang     wisarut@gmail.com    123456    0863658554    male        1    1    1    1        ${locator_err-firstname}    This field is required      
+    ${EMPTY}   chuduang     wisarut@gmail.com    123456    0863658554    male        4    1    1    1        ${locator_err-firstname}    This field is required      
     wisarut    ${EMPTY}     wisarut@gmail.com    123456    0863658554    male        1    1    1    1        ${locator_err-lastname}     This field is required
     wisarut    chuduang     ${EMPTY}             123456    0863658554    male        1    1    1    1        ${locator_err-email}        This field is required
     wisarut    chuduang     wisarut@gmail.com    ${EMPTY}  0863658554    male        1    1    1    1        ${locator_err-password}     This field is required
@@ -61,7 +61,7 @@ TC005 - Add User - fail
 
 TC006 Add User - Reset data
     [Documentation]    ทดสอบการกด Hyperlink Reset  เพื่อล้างข้อมูลทั้งหมดที่ทำการกรอกไว้
-    [Tags]    done
+    [Tags]    done14
     Input data for login to search Page
     Click Element    ${locator_btnAdduser}
     reset data

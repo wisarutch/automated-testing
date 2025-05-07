@@ -24,7 +24,7 @@ Open Web browser
 Input data for login page pass
     
     Input Text    ${locator_email}    user.test@krupbeam.com
-    Input Text    ${locator_password}    jKNsrapwLNV7eBN
+    Input Text    ${locator_password}    123456789
     Click Element    ${locator_btnlogin}
 
  Input data for login page fail
